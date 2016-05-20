@@ -1,0 +1,88 @@
+/* <RESPONSIVE GRID CSS STYLES> */
+
+
+/*                              */
+
+
+/* IMPORT RESET */
+
+@import url("reset.css");
+
+/* IMPORT 12 COLUMN RESPONSIVE GS */
+
+@import url("responsive.gs.12col.css");
+
+/*                               */
+
+
+/* </RESPONSIVE GRID CSS STYLES> */
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url(apple-touch-icon.png) no-repeat center center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Styles for mobile */
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Styles for tablet */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    /* Don't forget your Retina CSS! */
+    body {
+        background-size: 72px 72px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*	RESPONSIVE GRID EXAMPLE STYLES */
+//body {
+//	font-family: sans-serif;
+//	color: white;
+//}
+//
+//header {
+//	line-height: 15em;
+//	text-align: center;
+//	background: #333;
+//}
+//
+//article {
+//	line-height: 20em;
+//	text-align: center;
+//	background: #666;
+//}
+//
+//aside {
+//	line-height: 20em;
+//	text-align: center;
+//	background: #999;
+//}
+//
+//footer {
+//	line-height: 15em;
+//	text-align: center;
+//	background: #BBB;
+//}
+
+
+
+
+
