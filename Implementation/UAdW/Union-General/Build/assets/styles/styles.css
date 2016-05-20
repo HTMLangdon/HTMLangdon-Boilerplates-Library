@@ -20,4 +20,12 @@ body {
   /* Don't forget your Retina CSS! */
   body {
     background-size: 72px 72px; } }
+.col {
+  background: #fff;
+  padding: 1em 0;
+  text-align: center; }
+
+.col .col {
+  padding: 0; }
+
 /*	RESPONSIVE GRID EXAMPLE STYLES */

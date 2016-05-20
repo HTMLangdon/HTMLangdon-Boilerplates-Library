@@ -44,6 +44,15 @@ body {
 
 
 
+.col {
+	background: #fff;
+	padding: 1em 0;
+	text-align:center;
+}
+
+.col .col {
+	padding: 0;
+}
 
 
 
