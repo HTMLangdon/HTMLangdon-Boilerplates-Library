@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
+<head>
 
-    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        
+    
         <!-- Hammer reload -->
           <script>
             setInterval(function(){
@@ -30,34 +29,80 @@
           </script>
         <!-- /Hammer reload -->
       
-        <!-- @stylesheet normalize styles    reset    responsive.gs.12col	-->
-        <script src='assets/js/app.js'></script>
-<script src='assets/js/jquery-1.8.3.min.js'></script>
+    <!-- @stylesheet styles    reset    responsive.gs.12col	-->
+    <script src='assets/js/app.js'></script>
 <script src='assets/js/respond.min.js'></script>
 <script src='assets/js/velocity.min.js'></script>
-        <script src="js/boxsizing.htc"></script>
-        <link href="assets/favicon.ico" rel="shortcut icon">
-        <link href="assets/favicon.ico" rel="shortcut icon">
-        <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
 
-        <title>New Project</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 
-    </head>
+    <script src="js/boxsizing.htc"></script>
 
-    <body>
+    <link href="assets/favicon.ico" rel="shortcut icon">
+    <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <title>Union General</title>
+</head>
+
+<body>
 
     <header>
-    <nav>
+
+        <nav>
   <ul>
     <li></li>
   </ul>
 </nav>
+
     </header>
 
-  <section>
-    <!-- Write your HTML! -->
-  </section>
-  
+<section class="section group">
+
+    <div class="col span_1_of_3">
+        This column spans 1 of 3
+    </div>
+    <div class="col span_2_of_3">
+         This column spans 2 of 3, but has more grids nested in it.
+       <div class="section group">
+
+           <div class="col span_1_of_2">
+                <div class="padded">
+                    This inner grid spans 1 of 2
+                </div>
+            </div>
+
+            <div class="col span_1_of_2">
+                <div class="padded">
+                    This inner grid spans 1 of 2
+                </div>
+            </div>
+        </div>
+        
+        <div class="section group">
+            <div class="col span_1_of_3">
+                <div class="padded">
+                    This inner grid spans 1 of 3
+                </div>
+            </div>
+
+            <div class="col span_1_of_3">
+                <div class="padded">
+                    This inner grid spans 1 of 3
+                </div>
+            </div>
+
+            <div class="col span_1_of_3">
+                <div class="padded">
+                    This inner grid spans 1 of 3
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 </body>
 
 </html>

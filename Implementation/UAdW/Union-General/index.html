@@ -1,7 +1,50 @@
 <!-- @include _header -->
 
-  <section>
-    <!-- Write your HTML! -->
-  </section>
-  
+<section class="section group">
+
+    <div class="col span_1_of_3">
+        This column spans 1 of 3
+    </div>
+    <div class="col span_2_of_3">
+         This column spans 2 of 3, but has more grids nested in it.
+       <div class="section group">
+
+           <div class="col span_1_of_2">
+                <div class="padded">
+                    This inner grid spans 1 of 2
+                </div>
+            </div>
+
+            <div class="col span_1_of_2">
+                <div class="padded">
+                    This inner grid spans 1 of 2
+                </div>
+            </div>
+        </div>
+        
+        <div class="section group">
+            <div class="col span_1_of_3">
+                <div class="padded">
+                    This inner grid spans 1 of 3
+                </div>
+            </div>
+
+            <div class="col span_1_of_3">
+                <div class="padded">
+                    This inner grid spans 1 of 3
+                </div>
+            </div>
+
+            <div class="col span_1_of_3">
+                <div class="padded">
+                    This inner grid spans 1 of 3
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 <!-- @include _footer -->
