@@ -1,0 +1,47 @@
+// How projects should be set up:
+
+/*
+
+stylesheets/
+|
+|-- modules/              # Common modules
+|   |-- _all.scss         # Include to get all modules
+|   |-- _utility.scss     # Module name
+|   |-- _colors.scss      # Etc...
+|   ...
+|-- partials/             # Partials
+|   |-- _base.sass        # imports for all mixins + global project variables
+|   |-- _buttons.scss     # buttons
+|   |-- _figures.scss     # figures
+|   |-- _grids.scss       # grids
+|   |-- _typography.scss  # typography
+|   |-- _reset.scss       # reset
+|   ...
+|-- vendor/               # CSS or Sass from other projects
+|   |-- _colorpicker.scss
+|   |-- _jquery.ui.core.scss
+|   ...
+|
+`-- main.scss            # primary Sass file
+
+*/
+
+
+/*   <  Typography [font styles] > */
+
+$b-font_color: #ff00ff;
+$font_color_another_pg:#90f0f1;
+$b-font_size:15px;
+
+/*  < / Typography [font styles] >   */
+
+
+/*   <  Copy Design > */
+
+$p-tag-pad_top: 10px;
+$p-tag-pad_lft: 10px;
+$p-tag-pad_rgt: 10px;
+$p-tag-pad_btm: 10px;
+//$p-tag-padding: $p-tag-pad_lft;
+
+/*  < / Typography [font styles] >   */
