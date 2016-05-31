@@ -1,49 +1,68 @@
 <!-- @include _header -->
 
-<section class="section group">
 
-    <div class="col span_1_of_3">
-        This column spans 1 of 3
-    </div>
-    <div class="col span_2_of_3">
-         This column spans 2 of 3, but has more grids nested in it.
-       <div class="section group">
 
-           <div class="col span_1_of_2">
-                <div class="padded">
-                    This inner grid spans 1 of 2
-                </div>
-            </div>
 
-            <div class="col span_1_of_2">
-                <div class="padded">
-                    This inner grid spans 1 of 2
-                </div>
-            </div>
-        </div>
-        <div class="section group">
-            <div class="col span_1_of_3">
-                <div class="padded">
-                    This inner grid spans 1 of 3
-                </div>
-            </div>
+<style>
+    div.column {
+        /* The background image must be 800px wide */
+        max-width: 800px;
+    }
+    
+    figure.fluidratio {
+        padding-top: 10%;
+        /* slope */
+        height: 120px;
+        /* start height */
+        background-image: url(http://voormedia.com/examples/amsterdam.jpg);
+        background-size: cover;
+        -moz-background-size: cover;
+        /* Firefox 3.6 */
+        background-position: center;
+        /* Internet Explorer 7/8 */
+    }
+</style>
 
-            <div class="col span_1_of_3">
-                <div class="padded">
-                    This inner grid spans 1 of 3
-                </div>
-            </div>
 
-            <div class="col span_1_of_3">
-                <div class="padded">
-                    This inner grid spans 1 of 3
-                </div>
-            </div>
+<main role="main" class="site-content">
+    <section class="section group home">
 
+        <div class="section-background col span_3_of_3">
+            <figure class="fluid-ratio-image"></figure>
         </div>
 
-    </div>
+        <div class="section-content-container col span_3_of_3"><!-- @include home --></div>
+        
+    </section>
 
-</section>
+    <section class="section group about-a">
+        <div class="section-background col span_3_of_3"></div>
+        <!-- @include about-a -->
+    </section>
+
+    <section class="section group about-b">
+        <div class="section-background col span_3_of_3"></div>
+        <!-- @include  about-b -->
+    </section>
+
+    <section class="section group boutique">
+        <div class="section-background col span_3_of_3"></div>
+        <!-- @include  boutique -->
+    </section>
+
+    <section class="section group cupcakery">
+        <div class="section-background col span_3_of_3"></div>
+        <!-- @include  cupcakery -->
+    </section>
+
+    <section class="section group contact">
+        <div class="section-background col span_3_of_3"></div>
+        <!-- @include  contact -->
+    </section>
+
+</main>
+
+
+
 
 <!-- @include _footer -->
