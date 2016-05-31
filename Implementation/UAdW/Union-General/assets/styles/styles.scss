@@ -10,10 +10,31 @@
 
 /* IMPORT 12 COLUMN RESPONSIVE GS */
 
-@import url("col.css");
-@import url("responsive.gs.12col.css");
+@import "responsivegs-base-col.css";
+@import "responsivegs-12col.css";
+@import "responsivegs-9col.css";
+@import "responsivegs-8col.css";
+@import "responsivegs-7col.css";
+@import "responsivegs-6col.css";
+@import "responsivegs-5col.css";
+@import "responsivegs-4col.css";
+@import "responsivegs-3col.css";
+@import "responsivegs-2col.css";
+@import "partials/template-base";
+* {
+    font-family: sans-serif;
+    font-size: $default-font-size_content;
+}
 
-/*                               */
+.push {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 480px) {
+    .push {
+        display: none;
+    }
+}
 
 
 /* </RESPONSIVE GRID CSS STYLES> */
@@ -23,76 +44,23 @@ html {
 }
 
 body {
-    background: url(apple-touch-icon.png) no-repeat center center;
+    //  background: url('apple-touch-icon.png') no-repeat center center;
+    color: $HEX-Pure-White;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    /* Styles for mobile */
+header {
+    line-height: 15em;
+    text-align: center;
+    background: $RGBA-Salmon-Flat;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    /* Styles for tablet */
+footer {
+    line-height: 15em;
+    text-align: center;
+    background: none;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
-    /* Don't forget your Retina CSS! */
-    body {
-        background-size: 72px 72px;
-    }
+section.home {
+    background-color:beige;
+    div.section-background {}
 }
-
-
-
-
-
-.col {
-	background: #fff;
-	padding: 1em 0;
-	text-align:center;
-}
-
-.col .col {
-	padding: 0;
-}
-
-
-
-
-
-
-
-
-/*	RESPONSIVE GRID EXAMPLE STYLES */
-//body {
-//	font-family: sans-serif;
-//	color: white;
-//}
-//
-//header {
-//	line-height: 15em;
-//	text-align: center;
-//	background: #333;
-//}
-//
-//article {
-//	line-height: 20em;
-//	text-align: center;
-//	background: #666;
-//}
-//
-//aside {
-//	line-height: 20em;
-//	text-align: center;
-//	background: #999;
-//}
-//
-//footer {
-//	line-height: 15em;
-//	text-align: center;
-//	background: #BBB;
-//}
-
-
-
-
-
