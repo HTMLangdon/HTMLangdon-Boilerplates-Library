@@ -1,31 +1,32 @@
-// How projects should be set up:
-/*
-
-stylesheets/
-|
-|-- modules/              # Common modules
-|   |-- _all.scss         # Include to get all modules
-|   |-- _utility.scss     # Module name
-|   |-- _colors.scss      # Etc...
-|   ...
-|-- partials/             # Partials
-|   |-- _base.sass        # imports for all mixins + global project variables
-|   |-- _buttons.scss     # buttons
-|   |-- _figures.scss     # figures
-|   |-- _grids.scss       # grids
-|   |-- _typography.scss  # typography
-|   |-- _reset.scss       # reset
-|   ...
-|-- vendor/               # CSS or Sass from other projects
-|   |-- _colorpicker.scss
-|   |-- _jquery.ui.core.scss
-|   ...
-|
-`-- main.scss            # primary Sass file
-
-*/
-
-/* IMPORT RESET */
+//mixins.
+@mixin background-image-fullscreen($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 
+/* Calculate fluid ratio based on two dimensions (width/height) */
 
+@mixin fluid-ratio($large-size, $small-size) {
+    $width-large: nth($large-size, 1);
+    $width-small: nth($small-size, 1);
+    $height-large: nth($large-size, 2);
+    $height-small: nth($small-size, 2);
+    $slope: ($height-large - $height-small) / ($width-large - $width-small);
+    $height: $height-small - $width-small * $slope;
+    padding-top: $slope * 100%;
+    height: $height;
+    background-size: cover;
+    -moz-background-size: cover;
+    /* Firefox 3.6 */
+    background-position: center;
+    /* Internet Explorer 7/8 */
+}
+
+//figure.fluidratio {
+//    /* This element will have fluid ratio from 4:1 at 800px to 2:1 at 300px. */
+//    @include fluid-ratio(800px 200px, 300px 150px);
+//    background-image: url(http://voormedia.com/examples/amsterdam.jpg);
+//}
