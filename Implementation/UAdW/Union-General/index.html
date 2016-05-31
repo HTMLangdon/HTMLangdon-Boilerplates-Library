@@ -1,65 +1,53 @@
 <!-- @include _header -->
 
-
-
-
-<style>
-    div.column {
-        /* The background image must be 800px wide */
-        max-width: 800px;
-    }
-    
-    figure.fluidratio {
-        padding-top: 10%;
-        /* slope */
-        height: 120px;
-        /* start height */
-        background-image: url(http://voormedia.com/examples/amsterdam.jpg);
-        background-size: cover;
-        -moz-background-size: cover;
-        /* Firefox 3.6 */
-        background-position: center;
-        /* Internet Explorer 7/8 */
-    }
-</style>
-
-
-<main role="main" class="site-content">
-    <section class="section group home">
-
-        <div class="section-background col span_3_of_3">
-            <figure class="fluid-ratio-image"></figure>
+<main role="main" class="site-content container">
+    <section id="home" class="section">
+        <div class="content-container row">
+            <!-- @include home -->
         </div>
-
-        <div class="section-content-container col span_3_of_3"><!-- @include home --></div>
-        
     </section>
 
-    <section class="section group about-a">
-        <div class="section-background col span_3_of_3"></div>
-        <!-- @include about-a -->
+    <section id="about-a" class="section .gradient-3band">
+        <div class="background-image-bird row" style="position:relative;">
+            <div class="bird-image two-thirds column offset-by-two"><img src="assets/slices/background-image-sAbout-a-bird.png" alt=""></div>
+        </div>
+        <div class="u-cf"></div>
+        <div class="content container row">
+            <!-- @include about-a -->
+        </div>
     </section>
 
-    <section class="section group about-b">
-        <div class="section-background col span_3_of_3"></div>
-        <!-- @include  about-b -->
+    <section id="about-b" class="section">
+
+        <div class="content-container row">
+            <!-- @include  about-b -->
+        </div>
     </section>
 
-    <section class="section group boutique">
-        <div class="section-background col span_3_of_3"></div>
-        <!-- @include  boutique -->
+    <section id="boutique-a" class="section">
+        <div class="content-container row">
+            <!-- @include  boutique-a -->
+        </div>
     </section>
 
-    <section class="section group cupcakery">
-        <div class="section-background col span_3_of_3"></div>
-        <!-- @include  cupcakery -->
+    <section id="boutique-b-fbposts" class="section">
+
+        <div class="content-container row">
+            <!-- @include  boutique-b-fbposts -->
+        </div>
     </section>
 
-    <section class="section group contact">
-        <div class="section-background col span_3_of_3"></div>
-        <!-- @include  contact -->
+    <section id="cupcakery" class="section">
+        <div class="content-container row">
+            <!-- @include  cupcakery -->
+        </div>
     </section>
 
+    <section id="contact" class="section">
+        <div class="content-container row">
+            <!-- @include  contact -->
+        </div>
+    </section>
 </main>
 
 

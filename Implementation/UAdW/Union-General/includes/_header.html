@@ -22,47 +22,60 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-    <!-- Stylesheets -->
-
     <!-- @reload -->
-    <title>Example of the Responsive Grid System</title>
+    <title>Union General</title>
 
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+
+    <!--    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>-->
+    <script src="assets/js/jquery-2.2.3.min.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <script src="assets/js/velocity.min.js"></script>
-
-
     <link href="<!-- @path favicon.ico -->" rel="shortcut icon">
     <link href="<!-- @path apple-touch-icon.png -->" rel="apple-touch-icon">
     <link href="assets/styles/styles.css" rel="stylesheet">
 
+    <script src="assets/js/app.js"></script>
 
-
-
-    
 </head>
-
+<style>
+    /* Utility Classes */
+    /* Make element full width */
+    
+    .u-full-width {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    /* Make sure elements don't run outside containers (great for images in columns) */
+    
+    .u-max-full-width {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    /* Float either direction */
+    
+    .u-pull-right {
+        float: right;
+    }
+    
+    .u-pull-left {
+        float: left;
+    }
+    /* Clear a float */
+    
+    .u-cf {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
 
 <body>
 
-    <header>
-        <div class="navigation-logo col span_1_of_3">
-            <img src="../assets/logologo.png" />
+    <header class="row">
+        <div class="navigation-logo one-third column">
+            <img class="" src="assets/slices/logo-header.png" />
         </div>
-
-        <nav class="global-nav col span_2_of_3">
-            <ul class="section group">
-                <li class="col span_1_of_6">Home</li>
-                <li class="col span_1_of_6">About Us</li>
-                <li class="col span_1_of_6">Cupcakery</li>
-                <li class="col span_1_of_6">Boutique</li>
-                <li class="col span_1_of_6">News</li>
-                <li class="col span_1_of_6">Contact US</li>
-                    
-            </ul>
-        </nav>
+        <!-- @include _nav -->
+        <div class="u-cf"></div>
     </header>

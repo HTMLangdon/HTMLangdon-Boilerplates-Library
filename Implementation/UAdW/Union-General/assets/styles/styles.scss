@@ -1,28 +1,14 @@
-/* <RESPONSIVE GRID CSS STYLES> */
 
-
-/*                              */
 
 
 /* IMPORT RESET */
+@import url("html5reset.css");
 
-@import url("reset.css");
+/* core css inside template-base. any root section styles or globally applied section styles etc */
+@import "skeleton.scss";
 
-/* IMPORT 12 COLUMN RESPONSIVE GS */
-
-@import "responsivegs-base-col.css";
-@import "responsivegs-12col.css";
-@import "responsivegs-9col.css";
-@import "responsivegs-8col.css";
-@import "responsivegs-7col.css";
-@import "responsivegs-6col.css";
-@import "responsivegs-5col.css";
-@import "responsivegs-4col.css";
-@import "responsivegs-3col.css";
-@import "responsivegs-2col.css";
-@import "partials/template-base";
 * {
-    font-family: sans-serif;
+    font-family:$font-family-copy;
     font-size: $default-font-size_content;
 }
 
@@ -36,9 +22,6 @@
     }
 }
 
-
-/* </RESPONSIVE GRID CSS STYLES> */
-
 html {
     height: 100%;
 }
@@ -49,8 +32,8 @@ body {
 }
 
 header {
-    line-height: 15em;
-    text-align: center;
+//    line-height: 15em;
+    text-align: left;
     background: $RGBA-Salmon-Flat;
 }
 
@@ -60,7 +43,10 @@ footer {
     background: none;
 }
 
-section.home {
-    background-color:beige;
-    div.section-background {}
-}
+
+//
+//
+//section.home {
+//    background-color: beige;
+//    div.section-background {}
+//}
