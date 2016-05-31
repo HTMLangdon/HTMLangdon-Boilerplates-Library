@@ -1,86 +1,231 @@
 <!DOCTYPE html>
-<html>
-<head>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="This is the Responsive Grid System, a quick, easy and flexible way to create a responsive web site.">
+    <meta name="keywords" content="responsive, grid, system, web design">
+    <meta name="author" content="www.grahamrobertsonmiller.co.uk">
+    <meta http-equiv="cleartype" content="on">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Responsive and mobile friendly stuff -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Stylesheets -->
+
     
-    
-    
+    <title>Example of the Responsive Grid System</title>
+
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="assets/js/app.js"></script>
-    
-   
-   
     <script src="assets/js/respond.min.js"></script>
     <script src="assets/js/velocity.min.js"></script>
 
-    
-    <link href="assets/styles/styles.css" rel="stylesheet">
-    
+
     <link href="assets/favicon.ico" rel="shortcut icon">
     <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/styles/styles.css" rel="stylesheet">
 
-    <title>Union General</title>
+
+
+
+    
 </head>
+
 
 <body>
 
     <header>
+        <div class="navigation-logo col span_1_of_3">
+            <img src="../assets/logologo.png" />
+        </div>
 
-        <nav>
-  <ul>
-    <li></li>
-  </ul>
-</nav>
-
+        <nav class="global-nav col span_2_of_3">
+            <ul class="section group">
+                <li class="col span_1_of_6">Home</li>
+                <li class="col span_1_of_6">About Us</li>
+                <li class="col span_1_of_6">Cupcakery</li>
+                <li class="col span_1_of_6">Boutique</li>
+                <li class="col span_1_of_6">News</li>
+                <li class="col span_1_of_6">Contact US</li>
+                    
+            </ul>
+        </nav>
     </header>
 
-<section class="section group">
 
-    <div class="col span_1_of_3">
-        This column spans 1 of 3
-    </div>
-    <div class="col span_2_of_3">
-         This column spans 2 of 3, but has more grids nested in it.
-       <div class="section group">
 
-           <div class="col span_1_of_2">
-                <div class="padded">
-                    This inner grid spans 1 of 2
-                </div>
-            </div>
 
-            <div class="col span_1_of_2">
-                <div class="padded">
-                    This inner grid spans 1 of 2
-                </div>
-            </div>
-        </div>
-        <div class="section group">
-            <div class="col span_1_of_3">
-                <div class="padded">
-                    This inner grid spans 1 of 3
-                </div>
-            </div>
+<style>
+    div.column {
+        /* The background image must be 800px wide */
+        max-width: 800px;
+    }
+    
+    figure.fluidratio {
+        padding-top: 10%;
+        /* slope */
+        height: 120px;
+        /* start height */
+        background-image: url(http://voormedia.com/examples/amsterdam.jpg);
+        background-size: cover;
+        -moz-background-size: cover;
+        /* Firefox 3.6 */
+        background-position: center;
+        /* Internet Explorer 7/8 */
+    }
+</style>
 
-            <div class="col span_1_of_3">
-                <div class="padded">
-                    This inner grid spans 1 of 3
-                </div>
-            </div>
 
-            <div class="col span_1_of_3">
-                <div class="padded">
-                    This inner grid spans 1 of 3
-                </div>
-            </div>
+<main role="main" class="site-content">
+    <section class="section group home">
 
+        <div class="section-background col span_3_of_3">
+            <figure class="fluid-ratio-image"></figure>
         </div>
 
+        <div class="section-content-container col span_3_of_3"><div class="content col span_3_of_3">
+    <div class="logo-container">
+        <img src="../assets/slices/logo-large.png" />
+    </div>
+    <h1 class="headline"><!-- na --></h1>
+    <p class="copy">
+        <!-- na -->
+    </p>
+</div></div>
+        
+    </section>
+
+    <section class="section group about-a">
+        <div class="section-background col span_3_of_3"></div>
+        <div class="backgrounds">
+    <!--
+        <div class="background-far"><img src="" alt=""></div>
+        <div class="background-mid"><img src="" alt=""></div>
+-->
+    <div class="background-near"></div>
+</div>
+<div class="content">
+    <h1 class="headline">Union General is a Modern ‘General Store’</h1>
+    <p class="copy">The Union General offers a largesse arrangement of home goods, kids items, bath+body and baked goods in a cozy, homey, bite-size setting. Housed since 1997 in an 1850 parsonage in historic downtown Clarkston, the Clarkston Union and the Union Woodshop's sister store is filled with old school charm and curiosities edited with a whimsical yet focused eye. Pop in for a cheeky card and leave with a freshly baked cupcake, bubble bath, cookbook or toy harmonica!
+    </p>
+</div>
+    </section>
+
+    <section class="section group about-b">
+        <div class="section-background col span_3_of_3"></div>
+        <div class="content">
+    <h1 class="headline">Local and Loving it</h1>
+    <p class="copy">Housed since 1997 in an 1850 parsonage in historic downtown Clarkston, the Clarkston Union and the Union Woodshop's sister store is filled with old school charm and curiosities edited with a whimsical yet focused eye. Pop in for a cheeky card and leave with a freshly baked cupcake, bubble bath, cookbook or toy harmonica!</p>
+</div>
+    </section>
+
+    <section class="section group boutique">
+        <div class="section-background col span_3_of_3"></div>
+        <div class="content">
+    <h1 class="headline">Boutique</h1>
+    <p class="copy">Housed since 1997 in an 1850 parsonage in historic downtown Clarkston, the Clarkston Union and the Union Woodshop's sister store is filled with old school charm and curiosities edited with a whimsical yet focused eye. Pop in for a cheeky card and leave with a freshly baked cupcake, bubble bath, cookbook or toy harmonica!</p>
+</div>
+    </section>
+
+    <section class="section group cupcakery">
+        <div class="section-background col span_3_of_3"></div>
+        <section class="about-b">
+    <div class="backgrounds">
+        <!--
+        <div class="background-far"><img src="" alt=""></div>
+        <div class="background-mid"><img src="" alt=""></div>
+        -->
+        <div class="background-near"></div>
     </div>
 
+    <div id="page-title">Cupcakery</div>
+    <div class="content">
+        <h1 class="headline">Cupcakes & Other Sweets</h1>
+        <p class="copy">The Union General Cupcakery is packed with homespun baked goods that are never perfect but are always perfectly delish. Made from scratch in small batches, carefully acquired ingredients like Tahitian vanilla, Belgian chocolate, fresh eggs, butter and fruit have made these cupcakes a standout.</p>
+
+        <ul class="prices">
+            <li class="price">
+                Traditional Cupcakes: $2.50 per
+            </li>
+            <li class="price">
+                Premium Cupcakes: $3.00 per
+            </li>
+
+            <li class="price">
+                Buy 6, Pay for 5.
+            </li>
+
+            <li class="price">
+                Buy a dozen, Pay for 10.
+            </li>
+        </ul>
+    </div>
 </section>
+    </section>
+
+    <section class="section group contact">
+        <div class="section-background col span_3_of_3"></div>
+        
+
+    <div class="image logo-container"><img src="assets/slices/logo-medium.png" alt="Union General Logo"></div>
+    <div id="page-title displayNO">Contact</div>
+    <div class="content">
+
+        <address class="vcard">
+        <h1 class="headline address">Address</h1> 
+           <div class="adr"> 
+              <div class="street-address">50 South Main Street</div> 
+              <div class="locality">Clarkston, MI </div >  
+              <div class="postal-code">48346</div > 
+              <div class="country-name">United States</div > 
+           </div> 
+           <div class="tel">Telephone: 248-620-3800</div> 
+           <div class="email">Email: info@uniongeneral.com</div> 
+        </address>
+
+
+
+        <h2 class="headline hours">Hours</h2>
+
+        <ul class="hours-of-operation">
+            <li class="day-hour">
+                <span class="dayname">Monday</span>&nbsp;–&nbsp;<span class="dayname">Thursday</span>:&nbsp;
+                <span class="hours">11a&nbsp;–&nbsp;8p</span></li>
+
+            <li class="day-hour"><span class="dayname">Friday</span>&nbsp;–&nbsp;<span class="dayname">Saturday</span>:&nbsp;
+                <span class="hours">11a&nbsp;–&nbsp;9p</span></li>
+            <li class="day-hour"><span class="dayname">Sunday</span>:&nbsp;<span class="hours">11a&nbsp;–&nbsp;8p</span></li>
+        </ul>
+
+        <form id="form-signup mailing-list">
+            <input type="input" name="fName" placeholder="First Name" />
+            <input type="input" name="lName" placeholder="Last Name" />
+            <input type="input" name="eMail" value "" placeholder="Email Address" />
+            <input type="submit" name="Join" value="join" />
+        </form>
+    </div>
+    
+    </section>
+
+</main>
+
+
+
 
 </body>
 
